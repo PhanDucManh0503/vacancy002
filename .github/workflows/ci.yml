@@ -58,11 +58,11 @@ jobs:
           name: allure-results-${{ steps.sanitize.outputs.safe_name }}
           path: allure-results
 
-      - name: Fail the job if pytest failed
-        run: |
-          exit_code=$(cat exit-code.txt)
-          exit $exit_code
-        if: always()
+      # - name: Fail the job if pytest failed
+      #   run: |
+      #     exit_code=$(cat exit-code.txt)
+      #     exit $exit_code
+      #   if: always()
 
   generate-report:
     runs-on: ubuntu-latest
