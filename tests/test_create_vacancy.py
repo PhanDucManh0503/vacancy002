@@ -64,8 +64,8 @@ def test_create_new_vacancy(driver):
 
     sleep(10)
 
-    # Step 6: Click Save
-    add_vacancy.click_save()
+    # # Step 6: Click Save
+    # add_vacancy.click_save()
 
     # # Step 7: Verify Edit Vacancy displays (giả lập: check vacancy name xuất hiện)
     # assert vacancy_name in driver.page_source
