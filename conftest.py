@@ -7,6 +7,9 @@ def driver():
     # Thiết lập ChromeOptions nếu cần (ví dụ: headless, disable notifications, ...)
     options = webdriver.ChromeOptions()
     # options.add_argument("--headless")  # Bật dòng này nếu muốn chạy headless
+    options.add_argument("--headless")  # Nếu chạy CI/CD headless
+    options.add_argument("--no-sandbox")  # Nếu chạy trên Linux CI/CD
+    options.add_argument("--disable-dev-shm-usage")  # Tăng ổn định CI/CD
     options.add_argument("--window-size=1920,1080")
     # Khởi tạo WebDriver
     driver = webdriver.Chrome(options=options)
