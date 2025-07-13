@@ -1,0 +1,4 @@
+selenium>=4.0.0
+pytest>=7.0.0
+pytest-html         # (Tùy chọn: Xuất báo cáo HTML đẹp cho pytest)
+webdriver-manager   # (Giúp tự động tải/cập nhật driver Chrome/Edge/Firefox)
