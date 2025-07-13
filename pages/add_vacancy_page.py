@@ -130,4 +130,4 @@ class AddVacancyPage:
         publish_switch.click()
 
     def click_save(self):
-        self.driver.find_element(By.XPATH, "//button[@type='submit']").click()
+        self.driver.find_element(By.XPATH, "//button[normalize-space()='Save']").click()
